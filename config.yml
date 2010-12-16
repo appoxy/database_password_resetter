@@ -1,0 +1,21 @@
+database:
+    adapter: mysql
+    host: localhost
+    username: root
+    password:
+    dbname: my_db
+table:
+    name: users
+    # you can specify one or both of username_column and email_column.
+    username_column: username
+    email_column: email
+    # id_column and password_column required if do_reset == true
+    id_column: id
+    password_column: password
+options:
+    case_sensitive_match: false
+    do_reset: true
+#    hash_password: true/false
+callbacks:
+#    on_match_url: http://...
+
