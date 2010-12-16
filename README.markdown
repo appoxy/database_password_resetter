@@ -13,6 +13,11 @@ of a pain, but we don't want to be the ones spreading spam love around.
 
 **You can get this list from us by [filling out this form](https://spreadsheets.google.com/viewform?formkey=dDJkVFhXaG1GWnNZNWptY21qMmJkLWc6MQ).**
 
+Support
+-------
+
+If you need help with this script or resetting your database passwords, please contact us at <info@appoxy.com>.
+
 Installation
 ------------
 
@@ -41,8 +46,6 @@ One or both of the following must be present.
 
 - email_column: name of the column that contains the email addresses.
 - username_column: name of the column that contains usernames.
-- id_column: Used during the update operation when password is being set. Only required if do_reset is true.
-
 
 ### Options
 
@@ -52,7 +55,7 @@ One or both of the following must be present.
 
 ### callbacks / webhooks
 
-- on_match_url will POST to this URL with the matching email address. This can be used to send out an email with information on the reset. If do_reset is set above, the new password will also be send to this URL.
+- on_match_url will POST to this URL with the matching email address. This can be used to send out an email to the user with information on the reset. If do_reset is set above, the new password will also be send to this URL.
 
 
 Advanced
@@ -68,7 +71,9 @@ Override hash_password method.
 
     def hash_password(row)
 
-Row contains a hash of the database row.
+row contains a hash of the database row.
+
+
 
 
 
