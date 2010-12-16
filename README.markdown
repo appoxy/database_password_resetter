@@ -1,8 +1,8 @@
 Database Password Reset Script
 ==============================
 
-Due to the Gawker password fiasco, we thought we'd share the script we're using to reset
-passwords so everyone can easily reset any password where the email is found in the gawker list.
+Due to the Gawker password issue, we thought we'd share the script we're using to reset
+passwords for those users that are found in the Gawker list.
 
 Brought to you by: [![Appoxy](http://www.simpledeployr.com/images/global/appoxy-small.png)](http://www.appoxy.com)
 
